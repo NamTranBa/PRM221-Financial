@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".BudgetActivity">
+
+    <!-- Category Label & Input -->
+    <TextView
+        android:id="@+id/manageBudgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Manage Budget"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        style="@style/txtView"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:text="Category:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageBudgetTitle" />
+
+    <!-- Amount Label & Input -->
+    <Spinner
+        android:id="@+id/spCate"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/categoryLabel"
+        app:layout_constraintTop_toTopOf="@+id/categoryLabel" />
+
+    <TextView
+        android:id="@+id/amountLabel"
+        style="@style/txtView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Amount: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCate" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="0dp"
+        style="@style/edtView"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:background="@drawable/edittext_border"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amountLabel"
+        app:layout_constraintTop_toTopOf="@+id/amountLabel" />
+
+    <!-- Description Label & Input -->
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="70sp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Notes:"
+        style="@style/txtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAmount" />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        style="@style/edtView"
+        android:background="@drawable/edittext_border"
+        android:hint="Enter notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descriptionLabel"
+        app:layout_constraintTop_toTopOf="@+id/descriptionLabel" />
+
+    <!-- Start Date Label & Input -->
+    <TextView
+        android:id="@+id/startDateLabel"
+        android:layout_width="70sp"
+        android:layout_height="41dp"
+        style="@style/txtView"
+        android:layout_marginTop="16dp"
+        android:text="StartDate:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNote" />
+
+    <EditText
+        android:id="@+id/edtStartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        style="@style/edtView"
+        android:hint="(e.g., 01/01/2023)"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startDateLabel"
+        app:layout_constraintTop_toTopOf="@+id/startDateLabel" />
+
+    <!-- End Date Label & Input -->
+    <TextView
+        android:id="@+id/endDateLabel"
+        android:layout_width="70sp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="End Date:"
+        style="@style/txtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtStartDate" />
+
+    <EditText
+        android:id="@+id/edtEndDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/edtView"
+        android:hint="(e.g., 01/31/2023)"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/endDateLabel"
+        app:layout_constraintTop_toTopOf="@+id/endDateLabel" />
+
+    <!-- Save Button -->
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_border"
+        android:text="Save"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEndDate" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_border"
+        android:text="Update"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEndDate" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/button_border"
+        android:text="Back"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEndDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

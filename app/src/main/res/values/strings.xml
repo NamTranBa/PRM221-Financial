@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Manage</string>
+    <string name="balance"> Welcome:
+
+    </string>
+    <string name="open_drawer">Mở Menu</string>
+    <string name="close_drawer">Đóng Menu</string>
+    <string name="trans">Transaction</string>
+    <string name="history">History</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="footer">"@"CoppyRight For Group 4</string>
+</resources>

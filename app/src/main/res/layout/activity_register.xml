@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".RegisterActivity">
+
+    <!-- Logo or App Name Placeholder (Same as the login screen) -->
+
+    <!-- Registration Box -->
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="165dp"
+        android:layout_height="164dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="126dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/img" />
+
+    <RelativeLayout
+        android:layout_width="365dp"
+        android:layout_height="600dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/backgroud_border"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/edtDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUserName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            style="@style/edtViewLogin"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtDOB"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            style="@style/edtViewLogin"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtConfirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            style="@style/edtViewLogin"
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            style="@style/edtViewLogin"
+
+            android:background="@drawable/edittext_border"
+            android:gravity="left|center"
+            android:hint=" Username"
+            android:inputType="text"
+            android:textColor="#000000" />
+
+        <!-- Confirm Password EditText -->
+
+        <!-- Register Button -->
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtConfirmPass"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="103dp"
+            android:background="@drawable/button_border"
+            android:text="Register"
+            android:textColor="#000000"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/txtHaveLogin"
+            android:layout_width="258dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/buttonRegister"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="-79dp"
+            android:layout_marginEnd="33dp"
+            android:text="You have already account? Login now"
+            android:textColor="#F6F1F1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+</RelativeLayout>

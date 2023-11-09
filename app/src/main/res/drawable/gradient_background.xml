@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#241C35"
+                android:endColor="#554F62"
+                android:angle="90" /> <!-- Angle defines the direction of the gradient (90 for top to bottom) -->
+        </shape>
+    </item>
+</layer-list>

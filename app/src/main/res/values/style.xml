@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="vnd">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="welcome">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="txtView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="edtView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="edtViewLogin">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+
+    <style name="SpinnerItemStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DatePicker" parent="@android:style/Theme.Holo.Light">
+        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>
+    </style>
+</resources>

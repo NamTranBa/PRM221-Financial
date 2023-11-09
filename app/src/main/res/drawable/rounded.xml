@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#EBDFDF"/> <!-- Màu nền cho TextView -->
+
+    <corners android:radius="10dp"/> <!-- Bạn có thể thay đổi giá trị này để có border radius mong muốn -->
+
+    <!-- Nếu muốn thêm viền cho TextView, thêm các dòng dưới đây -->
+    <stroke
+        android:width="1dp"
+        android:color="#000000"/>
+
+</shape>
